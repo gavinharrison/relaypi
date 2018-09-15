@@ -18,11 +18,12 @@ try:
 
     try:
         # Getting the users input and checking that is is a number.
-        input = raw_input([1 - "+ len(pinList) +"] ")
+        input = raw_input("[1 - "+ len(pinList) +"] ")
         relay = int(input)
 
         # Checking that the entered number is with in the correct range.
         if (relay > 0 && relay <= len(pinList))
+
             # Toggling the status of the requested relay.
             GPIO.output(pinList[pin-1], not GPIO.input(pinList[pin-1]))
         else
